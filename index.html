@@ -37,9 +37,48 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+    /* Optional: Prevent automatic styling override */
+    #google_translate_element {
+      position: relative;
+      z-index: 9999;
+    }
+
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+
+    body {
+      top: 0px !important;
+    }
+  </style>
 </head>
 
 <body>
+<!-- Google Translate Element -->
+<div id="google_translate_element"></div>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+            {
+              pageLanguage: 'en',
+              includedLanguages: 'fr,es,zh-CN',
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+<script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
